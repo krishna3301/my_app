@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+.form {
+  /*background: #2d85b0;*/
+  align: center;
+  width: "100%";
+  width: 400px;
+  margin: 0px 0px 0px 10px;
+  position: relative;
+}
+
+.paper {
+  margin-top: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  font-family: "Lora", sans-serif;
+  width: 100%;
+}
+
+body {
+  margin: 3% auto 0 auto;
+  width: 90%;
+  max-width: 1125px;
+}
+
+input,
+span,
+label {
+  font-family: "Ubuntu", sans-serif;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  font-size: 8px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input.question {
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  /* border: none;  */
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+}
+
+input.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 0%;
+  border: 1px solid rgb(40, 36, 240);
+  transition: width 0.2s;
+}
+
+/* input.question:focus + label {
+  width: 0%;
+} */
+
+input.question:focus,
+input.question:valid {
+  padding-top: 5px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -80px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* 
+input.question:valid + label {
+  border-color: green;
+} */
+
+input.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8f8f8f;
+  font-size: 28px;
+  top: -80px;
+  left: 0px;
+  font-size: 20px;
+  transition: top 0.2s, font-size 0.2s ease, color 0.2s ease;
+}
+
+/* .okButton{
+   position: relative;
+  float: right;
+  font-size: 50px;
+  padding: 0%;
+} */
+
+/* 
+ .box{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+
+} 
+.company{
+  border-radius: 5px;
+  box-sizing: border-box;
+    border: 2px solid rgb(28, 122, 245);
+    padding: 25px; 
+    width: 185px;
+    height: 15px;
+    display:block;
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;    
+}
+.label{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  transition: .2s;
+}
+.box:focus ~ label{
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+}
+.company:focus ~ label{
+  top: -12px;
+  font-size: 12px;
+} */
