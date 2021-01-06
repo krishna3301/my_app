@@ -193,7 +193,7 @@ function Regis(props) {
           </Button>
         </Grid>
         <br /> <hr />
-        <Typography component="p" variant="p">
+        <Typography component="h1">
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               By creating an account you agree to our{" "}

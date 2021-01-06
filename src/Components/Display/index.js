@@ -3,7 +3,7 @@ import "../Registration/regis.css";
 import "../Table/table.css";
 import Button from "@material-ui/core/Button";
 //import Dialog from '@material-ui/core/Dialog';
-import { createStyles, Theme } from "@material-ui/core/styles";
+//import { createStyles, Theme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import { withRouter } from "react-router-dom";
 import { useTheme } from "@material-ui/core/styles";
@@ -17,7 +17,7 @@ import { connect, useSelector } from "react-redux";
 //import { showDetails } from '../Redux/actions/registration.action';
 import EditTable from "../Table";
 
-const styles = (theme: Theme) =>
+/* const styles = (theme: Theme) =>
   createStyles({
     root: {
       margin: 10,
@@ -29,7 +29,7 @@ const styles = (theme: Theme) =>
       top: theme.spacing(1),
       color: theme.palette.grey[500],
     },
-  });
+  }); */
 
 function Display(props) {
   const [display, setDisplay] = useState(false);
@@ -61,7 +61,7 @@ function Display(props) {
           <DialogContent dividers>
             <DialogContentText>
               {user.map((data) => (
-                <Typography gutterBottom>
+                <Typography gutterBottom component="p">
                   Name: {data.fname} {data.lname} &nbsp; Email: {data.email}{" "}
                   &nbsp;
                   <br />

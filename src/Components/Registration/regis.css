@@ -16,7 +16,7 @@ h1 {
 
 .form {
   /*background: #2d85b0;*/
-  align: center;
+  align-items: center;
   width: "100%";
   width: 400px;
   margin: 0px 0px 0px 10px;

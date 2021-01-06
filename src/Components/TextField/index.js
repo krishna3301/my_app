@@ -15,13 +15,12 @@ function TextField(props) {
       <input
         type={props.type}
         name="name"
-        class="question"
-        id="nme"
+        className="question"
         required
         style={{ border: props.error ? "1px solid red" : "1px solid blue" }}
         onChange={props.onChange}
       />
-      <label for="nme">
+      <label>
         <span>{props.label}</span>
       </label>
       {props.error && (
